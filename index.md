@@ -289,10 +289,6 @@
                                 </p>
                                 <ul class="list-inline item-details">
                                     <li>
-                                        Client:
-                                        <strong><a href="http://startbootstrap.com">Start Bootstrap</a> </strong>
-                                    </li>
-                                    <li>
                                         Date:
                                         <strong><a href="http://startbootstrap.com">April 2014</a> </strong>
                                     </li>
