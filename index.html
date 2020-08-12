@@ -99,6 +99,7 @@
                             <img src="img/portfolio/Google_Map.png" class="img-responsive" alt="Google" />
                         </a>
                     </div>
+
                     <div class="col-sm-4 portfolio-item">
                         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
@@ -109,6 +110,7 @@
                             <img src="img/portfolio/Naver_Map.png" class="img-responsive" alt="Naver" />
                         </a>
                     </div>
+
                     <div class="col-sm-4 portfolio-item">
                         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
@@ -119,6 +121,7 @@
                             <img src="img/portfolio/Kakao_Map.png" class="img-responsive" alt="KaKao" />
                         </a>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -133,12 +136,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-                        <p> 상용으로 제공되고 있는 지도 기반 API 기능 > Web 구현 가능 기능 테스트
-                        </p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <p> 부가 활용 가능한 공공 API에 대해 적용 실습 및 기능 개발 PoC</p>
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p> 상용으로 제공되고 있는 지도 기반 API 기능 > Web 구현 가능 기능 테스트 <br><br>
+                            부가 활용 가능한 공공 API에 대해 적용 실습 및 기능 개발 PoC <br> </p>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <a href="#" class="btn btn-lg btn-outline"> <i class="fa fa-download"></i> Download </a>
@@ -202,15 +202,16 @@
             </div>
         </section>
 
+
         <!-- Footer -->
         <footer class="text-center">
             <div class="footer-above">
                 <div class="container">
                     <div class="row">
-                        <div class="footer-col col-md-4">
+                        <div class="footer-col col-md-4 text-center">
                             <h3>Location</h3>
                             <p>
-                                Baumoe-ro 2-gil, Seocho-gu, Seoul, Republic of Korea <br />
+                                Baumoe-ro 2-gil, Seocho-gu, Seoul, Republic of Korea <br>
                                 06763
                             </p>
                         </div>
@@ -220,7 +221,7 @@
             <div class="footer-below">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 text-center">
                             Copyright &copy; For test_from August. 2020
                         </div>
                     </div>
@@ -251,12 +252,12 @@
                                 <hr class="star-primary" />
                                 <img src="img/portfolio/Google_Map.png" class="img-responsive img-centered" alt="" />
                                 <p>
-                                    Android 단말에 대한 서비스를 주로 제공하고 있는 Google Maps Platform은 세계 사용자를 대상으로 주로 서비스를 제공하고 있습니다.
+                                    Android 단말에 대한 서비스를 주로 제공하고 있는 Google Maps Platform은 세계 사용자를 대상으로 주로 서비스를 제공하고 있습니다. <br>
                                     <a href="https://cloud.google.com/maps-platform/">Google API</a> 사이트를 통해 해당 Key를 발급받아 각종 서비스 테스트가 가능합니다.
                                 </p>
                                 <ul class="list-inline item-details">
                                     <li>
-                                        My Google Maps
+                                        Personal Google Map
                                         <strong><a href="https://Google.com/maps/d/"> My Google Maps</a> </strong>
                                     </li>
                                 </ul>
@@ -267,7 +268,7 @@
                 </div>
             </div>
         </div>
-      
+
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -283,59 +284,54 @@
                                 <hr class="star-primary" />
                                 <img src="img/portfolio/Naver_Map.png" class="img-responsive img-centered" alt="" />
                                 <p>
-                                    가장 많은 사용자가 사용하고 있는 Portal Service Platform과 연동하여 접근성이 높은 지도 서비스 입니다.
-                                    <a href="https://navermaps.github.io/maps.js/">Naver Maps API v3</a>사이트를 통해 해당 Key를 발급받아 각종 서비스 테스트가 가능합니다.
+                                    가장 많은 사용자가 사용하고 있는 Portal Service Platform과 연동하여 접근성이 높은 지도 서비스 입니다. <br>
+                                    <a href="https://navermaps.github.io/maps.js/">Naver Maps API v3</a> 사이트를 통해 해당 Key를 발급받아 각종 서비스 테스트가 가능합니다.
                                 </p>
-				<div id="navermap" style="width:480px%; height:270px;"></div>    
-				<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=6bt3x0pffm"></script>
 
+				                            <div id="navermap" style="width:480px%;height:270px;"></div>
+				                                <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=6bt3x0pffm"></script>
+			                                     <script>
+				                                       var mapOptions = {
+  				                                           center: new naver.maps.LatLng(37.3595704, 127.105399),
+ 				                                                zoom: 10
+				                                                  };
 
-			<script>
-				var mapOptions = {
-  				  center: new naver.maps.LatLng(37.3595704, 127.105399),
- 				   zoom: 10
-				};
+				                                       var map = new naver.maps.Map('navermap', mapOptions);
+				                                       var map = new naver.maps.Map('navermap', {
+   					                                         center: new naver.maps.LatLng(37.5666805, 126.9784147),
+    					                                       zoom: 10,
+    					                                       mapTypeId: naver.maps.MapTypeId.NORMAL});
 
-				var map = new naver.maps.Map('navermap', mapOptions);
-				var map = new naver.maps.Map('navermap', {
-   					center: new naver.maps.LatLng(37.5666805, 126.9784147),
-    					zoom: 10,
-    					mapTypeId: naver.maps.MapTypeId.NORMAL
-					});
+				                                       var infowindow = new naver.maps.InfoWindow();
 
-				var infowindow = new naver.maps.InfoWindow();
+					                                     function onSuccessGeolocation(position) {
+    						                                       var location = new naver.maps.LatLng(position.coords.latitude,position.coords.longitude);
+    						                                             map.setCenter(location); // 얻은 좌표를 지도의 중심으로 설정합니다.
+    						                                             map.setZoom(10); // 지도의 줌 레벨을 변경합니다.
 
-					function onSuccessGeolocation(position) {
-    						var location = new naver.maps.LatLng(position.coords.latitude,position.coords.longitude);
+    						                                             infowindow.setContent('<div style="padding:20px;">' + 'geolocation.getCurrentPosition() 위치' + '</div>');
+    						                                             infowindow.open(map, location);
+    						                                             console.log('Coordinates: ' + location.toString());
+						                                                                            }
 
-    						map.setCenter(location); // 얻은 좌표를 지도의 중심으로 설정합니다.
-    						map.setZoom(10); // 지도의 줌 레벨을 변경합니다.
+					                                     function onErrorGeolocation() {
+    						                                       var center = map.getCenter();
 
-    						infowindow.setContent('<div style="padding:20px;">' + 'geolocation.getCurrentPosition() 위치' + '</div>');
+    						                                             infowindow.setContent('<div style="padding:20px;">' + '<h5 style="margin-bottom:5px;color:#f00;">Geolocation failed!</h5>'+ "latitude: "+ center.lat() +"<br />longitude: "+ center.lng() +'</div>');
+    						                                             infowindow.open(map, center);
+						                                                                  }
 
-    						infowindow.open(map, location);
-    						console.log('Coordinates: ' + location.toString());
-						}
+					                                             $(window).on("load", function() {
+    						                                               if (navigator.geolocation) {
+					                                                            navigator.geolocation.getCurrentPosition(onSuccessGeolocation, onErrorGeolocation);
+    						                                                          } else {
+        						                                                        var center = map.getCenter();
+        						                                                              infowindow.setContent('<div style="padding:20px;"><h5 style="margin-bottom:5px;color:#f00;">Geolocation not supported</h5></div>');
+        						                                                              infowindow.open(map, center);
+    						                                                                      }
+						                                                                              });
+			                                    </script>
 
-					function onErrorGeolocation() {
-    						var center = map.getCenter();
-
-    						infowindow.setContent('<div style="padding:20px;">' + '<h5 style="margin-bottom:5px;color:#f00;">Geolocation failed!</h5>'+ "latitude: "+ center.lat() +"<br />longitude: "+ center.lng() +'</div>');
-
-    						infowindow.open(map, center);
-						}
-
-					$(window).on("load", function() {
-    						if (navigator.geolocation) {
-					        navigator.geolocation.getCurrentPosition(onSuccessGeolocation, onErrorGeolocation);
-    						} else {
-        						var center = map.getCenter();
-        						infowindow.setContent('<div style="padding:20px;"><h5 style="margin-bottom:5px;color:#f00;">Geolocation not supported</h5></div>');
-        						infowindow.open(map, center);
-    						}
-						});
-			</script>
-				    
                                 <ul class="list-inline item-details">
                                     <li>
                                         Date:
@@ -369,18 +365,17 @@
                                 <hr class="star-primary" />
                                 <img src="img/portfolio/Kakao_Map.png" class="img-responsive img-centered" alt="" />
                                 <p>
-                                    국내 가장 많은 사용자를 보유하고 있는 SNS 카카오에서 제공하는 지도 플랫폼 입니다.
+                                    국내 가장 많은 사용자를 보유하고 있는 SNS 카카오에서 제공하는 지도 플랫폼 입니다. <br>
                                    <a href="https://apis.map.kakao.com//">Kakao Maps API</a>사이트를 통해 해당 Key를 발급받아 각종 서비스 테스트가 가능합니다.
                                 </p>
 
 				 <!-- KaKao Map API -->
-				<body>
 					<div id="kakaomap" style="width:480px; height:270px;"> </div>
-					<p>
+				 <!--	<p>
 						<button onclick="resizeMap()">
 						<button onclick="relayout()">
-					</p>
-							
+					</p> -->
+
 					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d2d814f01aca897823f1ef87666f3e51"></script>
 					<script>
 						var mapContainer = document.getElementById('kakaomap');
@@ -389,17 +384,18 @@
 							level: 3
 						};
 
-						var map = new kakao.maps.Map(mapContainer, mapOptions);
+						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
 						function resizeMap() {
 							var mapContainer = document.getElementById('map');
 							mapContainer.style.width = '650px';
 							mapContainer.style.height = '650px';
 						}
-						
+
 						function relayout() {
 							map.relayout();
 						}
 					</script>
+				</body>
 				 <!-- KaKao Map API Fin-->
 
                                 <ul class="list-inline item-details">
