@@ -256,6 +256,16 @@
                                       <li style="text-align:left;"> Android 단말에 대한 서비스를 주로 제공하고 있는 Google Maps Platform은 세계 사용자를 대상으로 주로 서비스를 제공하고 있습니다. </li>
                                       <li style="text-align:left;"> <a href="https://cloud.google.com/maps-platform/">Google API</a> 사이트를 통해 해당 Key를 발급받아 각종 서비스 테스트가 가능합니다. </li> </ul>
                                 </p> <br>
+                                <div id="googlemap" style="width:600px; height: 300px;"></div> 
+                                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT44-6K7aRVTax9M8AlHTWwLa0_n4-6k&callback=initMap&region=kr"></script> 
+                                <script> function initMap() 
+                                  { var seoul = {lat: 37.5642135 ,lng: 127.0016985 }; 
+                                  var googlemap = new google.maps.Map( document.getElementById('googlemap'), { zoom: 3, center: seoul }); }
+                                  new google.maps.Marker({ position: seoul, map: googlemap, label: "서울 중심 좌표" }); }
+                                </script>
+
+                                <script src="./script.js"></script>
+
                                 <ul class="list-inline item-details">
                                     <li>
                                         Personal Google Map
@@ -445,8 +455,8 @@
 						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
 						function resizeMap() {
 							var mapContainer = document.getElementById('kakaomap');
-							mapContainer.style.width = '480px';
-							mapContainer.style.height = '270px';
+							mapContainer.style.width = '600px';
+							mapContainer.style.height = '300px';
 						};
 
 						function relayout() {
