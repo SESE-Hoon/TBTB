@@ -313,7 +313,7 @@
                                                       });
                                                       var semaphore = false;
 
-                                                      naver.maps.Event.once(navermap, 'init_stylemap', function() {
+                                                      naver.maps.Event.once(map, 'init_stylemap', function() {
                                                           map.setOptions({
                                                               mapTypeControl: true,
                                                               scaleControl: false,
@@ -335,12 +335,12 @@
                                                               logoControl: false
                                                           });
 
-                                                          naver.maps.Event.addListener(navermap, 'bounds_changed', function(bounds) {
+                                                          naver.maps.Event.addListener(map, 'bounds_changed', function(bounds) {
                                                               if (semaphore) return;
 
                                                               minimap.fitBounds(bounds);
                                                           });
-                                                          naver.maps.Event.addListener(navermap, 'mapTypeId_changed', function(mapTypeId) {
+                                                          naver.maps.Event.addListener(map, 'mapTypeId_changed', function(mapTypeId) {
                                                               var toTypes = {
                                                                   "normal": "hybrid",
                                                                   "terrain": "satellite",
@@ -360,15 +360,13 @@
                                                           });
                                                       });
 				                                       var infowindow = new naver.maps.InfoWindow();
-
-
 					                                     function onSuccessGeolocation(position) {
     						                                       var location = new naver.maps.LatLng(position.coords.latitude,position.coords.longitude);
     						                                             map.setCenter(location); // 얻은 좌표를 지도의 중심으로 설정합니다.
     						                                             map.setZoom(10); // 지도의 줌 레벨을 변경합니다.
 
     						                                             infowindow.setContent('<div style="padding:20px;">' + 'geolocation.getCurrentPosition() 위치' + '</div>');
-    						                                             infowindow.open(navermap, location);
+    						                                             infowindow.open(map, location);
     						                                             console.log('Coordinates: ' + location.toString());
 						                                                                            }
 
@@ -376,7 +374,7 @@
     						                                       var center = map.getCenter();
 
     						                                             infowindow.setContent('<div style="padding:20px;">' + '<h5 style="margin-bottom:5px;color:#f00;">Geolocation failed!</h5>'+ "latitude: "+ center.lat() +"<br />longitude: "+ center.lng() +'</div>');
-    						                                             infowindow.open(navermap, center);
+    						                                             infowindow.open(map, center);
 						                                                                  }
 
 					                                             $(window).on("load", function() {
@@ -385,11 +383,9 @@
     						                                                          } else {
         						                                                        var center = map.getCenter();
         						                                                              infowindow.setContent('<div style="padding:20px;"><h5 style="margin-bottom:5px;color:#f00;">Geolocation not supported</h5></div>');
-        						                                                              infowindow.open(navermap, center);
+        						                                                              infowindow.open(map, center);
     						                                                                      }
 						                                                                              });
-
-
 			                                    </script>
 
                                 <ul class="list-inline item-details">
