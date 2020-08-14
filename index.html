@@ -294,6 +294,7 @@
                                 <h2>Based on Naver Maps API</h2>
                                 <hr class="star-primary" />
                                 <img src="img/portfolio/Naver_Map.png" class="img-responsive img-centered" alt="" />
+
                                 <p style="font-size:15px; text-align:left;">
                                   <ul>
                                     <li style="text-align:left;"> 가장 많은 사용자가 사용하고 있는 Portal Service Platform과 연동하여 접근성이 높은 지도 서비스 입니다. </li>
@@ -430,44 +431,44 @@
                                 <h2>Based on Kakao Maps API</h2>
                                 <hr class="star-primary" />
                                 <img src="img/portfolio/Kakao_Map.png" class="img-responsive img-centered" alt="" />
-                                <p style="font-size:15px; text-align:left;">
+                                <p style="font-size:15px;">
                                   <ul>
                                     <li style="text-align:left;"> 국내 가장 많은 사용자를 보유하고 있는 SNS, 카카오에서 제공하는 지도 플랫폼 입니다. </li>
                                     <li style="text-align:left;"> <a href="https://apis.map.kakao.com//">Kakao Maps API</a>사이트를 통해 해당 Key를 발급받아 각종 서비스 테스트가 가능합니다. </li> </ul>
                                 </p>
 
-				 <!-- KaKao Map API -->
-         <div id="kakaomap" style="width:600px; height:300px;" class="col-lg-8 col-lg-offset-2"> </div>
 
-				 <!--	<p>
-						<button onclick="resizeMap()">
-						<button onclick="relayout()">
-					</p> -->
+				                           <!-- KaKao Map API -->
+                                   <div id="kakaomap" style="width:600px; height:300px;"> </div>
 
-					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d2d814f01aca897823f1ef87666f3e51"></script>
-					<script>
-						var mapContainer = document.getElementById('kakaomap');
-						var mapOptions = {
-							center: new kakao.maps.LatLng(37.5642135, 127.0016985),
-							level: 3
-						};
-						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
-						function resizeMap() {
-							var mapContainer = document.getElementById('kakaomap');
-							mapContainer.style.width = '600px';
-							mapContainer.style.height = '300px';
-						};
+                          				 <p>
+                          						<button onclick="resizeMap()">
+                          						<button onclick="relayout()">
+                          				 </p>
+                          				      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d2d814f01aca897823f1ef87666f3e51"></script>
+                          					    <script>
+                          						        var mapContainer = document.getElementById('kakaomap');
+                          						              var mapOptions = {
+                          							                center: new kakao.maps.LatLng(37.5642135, 127.0016985),
+                          							                level: 3
+                          						                  };
+                                  						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
+                                        						function resizeMap() {
+                                          							var mapContainer = document.getElementById('kakaomap');
+                                          							mapContainer.style.width = '600px';
+                                          							mapContainer.style.height = '300px';
+                                          						};
 
-						function relayout() {
-							map.relayout();
-						};
-					</script>
-				 <!-- KaKao Map API Fin-->
+                                  						function relayout() {
+                                  							       map.relayout();
+                                          						};
+                                        </script>
+                                  <!-- KaKao Map API Fin-->
 
                                 <ul class="list-inline item-details">
                                     <li>
                                         Client:
-                                        <strong><a href="http://startbootstrap.com">St Bootstrap</a> </strong>
+                                        <strong><a href="http://startbootstrap.com">St Bootasdstrap</a> </strong>
                                     </li>
                                     <li>
                                         Date:
