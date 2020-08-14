@@ -439,7 +439,7 @@
 
 
 				                           <!-- KaKao Map API -->
-                                   <div id="kakaomap"> </div>
+                                   <div id="kakaomap" style="width:70%; height:300px;"> </div>
 
                           				 <!-- <p>
                           						<button onclick="resizeMap()">
@@ -454,9 +454,12 @@
                           						                  };
                                   						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
                                           							var mapContainer = document.getElementById('kakaomap');
-                                          							mapContainer.style.width = '1200px';
-                                          							mapContainer.style.height = '400px';
-
+                                          							mapContainer.style.width = '600px';
+                                          							mapContainer.style.height = '300px';
+                                              var mapTypeControl = new kakao.maps.MapTypeControl();
+                                                map.addControl(mapTypeControl kakao.maps.ControlPosition.TOPRIGHT);
+                                              var zoomControl = new kakao.mapsZoomControl();
+                                                map.addControl(zoomControl, kakao.maps.ControlPosition.Right);
                                   						function relayout() {
                                   							       kakaomap.relayout();
                                           						};
@@ -466,7 +469,7 @@
                                 <ul class="list-inline item-details">
                                     <li>
                                         Client:
-                                        <strong><a href="http://startbootstrap.com">St Bootstrap</a> </strong>
+                                        <strong><a href="http://startbootstrap.com">St Bootasdstrap</a> </strong>
                                     </li>
                                     <li>
                                         Date:
@@ -474,7 +477,7 @@
                                     </li>
                                     <li>
                                         Service:
-                                        <strong><a href="http://startbootstrap.com">Web Development</a> </strong>
+                                        <strong><a href="http://startbootstrap.com">Web Dessssvelopment</a> </strong>
                                     </li>
                                 </ul>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
