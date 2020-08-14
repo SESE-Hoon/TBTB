@@ -441,10 +441,10 @@
 				                           <!-- KaKao Map API -->
                                    <div id="kakaomap" style="width:600px; height:300px;"> </div>
 
-                          				 <p>
+                          				 <!-- <p>
                           						<button onclick="resizeMap()">
                           						<button onclick="relayout()">
-                          				 </p>
+                          				 </p> -->
                           				      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d2d814f01aca897823f1ef87666f3e51"></script>
                           					    <script>
                           						        var mapContainer = document.getElementById('kakaomap');
@@ -452,13 +452,13 @@
                           							                center: new kakao.maps.LatLng(37.5642135, 127.0016985),
                           							                level: 3
                           						                  };
-                                  						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
+                                  					<!--	var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
                                         						function resizeMap() {
                                           							var mapContainer = document.getElementById('kakaomap');
                                           							mapContainer.style.width = '600px';
                                           							mapContainer.style.height = '300px';
-                                          						};
-
+                                          						}; --> 
+                                                      
                                   						function relayout() {
                                   							       map.relayout();
                                           						};
