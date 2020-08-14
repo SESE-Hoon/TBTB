@@ -439,7 +439,7 @@
 
 
 				                           <!-- KaKao Map API -->
-                                   <div id="kakaomap" style="width:600px; height:300px;"> </div>
+                                   <div id="kakaomap" style="width:1200px; height:600px;"> </div>
 
                           				 <!-- <p>
                           						<button onclick="resizeMap()">
@@ -452,17 +452,17 @@
                           							                center: new kakao.maps.LatLng(37.5642135, 127.0016985),
                           							                level: 3
                           						                  };
-                                  						var kakaomap = new kakao.maps.Map(mapContainer, mapOptions);
+                                  						var map = new kakao.maps.Map(mapContainer, mapOptions);
                                           							var mapContainer = document.getElementById('kakaomap');
                                           							mapContainer.style.width = '600px';
                                           							mapContainer.style.height = '300px';
-                                              <!--var mapTypeControl = new kakao.maps.MapTypeControl();
-                                                map.addControl(mapTypeControl kakao.maps.ControlPosition.TOPRIGHT);
+                                              var mapTypeControl = new kakao.maps.MapTypeControl();
+                                                map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
                                               var zoomControl = new kakao.mapsZoomControl();
-                                                map.addControl(zoomControl, kakao.maps.ControlPosition.Right);-->
+                                                map.addControl(zoomControl, kakao.maps.ControlPosition.Right);
 
                                               function relayout() {
-                                  							       kakaomap.relayout();
+                                  							       map.relayout();
                                           						};
                                         </script>
                                   <!-- KaKao Map API Fin-->
@@ -474,7 +474,7 @@
                                     </li>
                                     <li>
                                         Date:
-                                        <strong><a href="http://startbootstrap.com">April019</a> </strong>
+                                        <strong><a href="http://startbootstrap.com">April 2019</a> </strong>
                                     </li>
                                     <li>
                                         Service:
