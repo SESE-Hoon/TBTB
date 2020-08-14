@@ -260,7 +260,7 @@
                                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUT44-6K7aRVTax9M8AlHTWwLa0_n4-6k&callback=initMap&region=kr"></script>
                                 <script> function initMap()
                                   { var seoul = {lat: 37.5642135 ,lng: 127.0016985 };
-                                  var googlemap = new google.maps.Map( document.getElementById('googlemap'), { zoom: 3, center: seoul }); }
+                                  var map = new google.maps.Map( document.getElementById('googlemap'), { zoom: 3, center: seoul }); }
                                   new google.maps.Marker({ position: seoul, map: googlemap, label: "서울 중심 좌표" }); }
                                 </script>
 
